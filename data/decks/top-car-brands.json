@@ -1,0 +1,300 @@
+{
+  "id": "top-car-brands",
+  "title": "Top Car Brands",
+  "cards": [
+    {
+      "id": "1",
+    "title": "Toyota",
+    "text": "Japan, founded in 1937, Kiichiro Toyoda, Toyota Corolla",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.svg"
+  },
+  {
+    "id": "2",
+    "title": "Volkswagen",
+    "text": "Germany, founded in 1937, German Labour Front, Volkswagen Golf",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg"
+  },
+  {
+    "id": "3",
+    "title": "Ford",
+    "text": "United States, founded in 1903, Henry Ford, Ford F-Series",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg"
+  },
+  {
+    "id": "4",
+    "title": "Honda",
+    "text": "Japan, founded in 1948, Soichiro Honda, Honda Civic",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Honda.svg"
+  },
+  {
+    "id": "5",
+    "title": "Mercedes-Benz",
+    "text": "Germany, founded in 1926, Karl Benz and Gottlieb Daimler, Mercedes-Benz C-Class",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg"
+  },
+  {
+    "id": "6",
+    "title": "BMW",
+    "text": "Germany, founded in 1916, Franz Josef Popp, BMW 3 Series",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg"
+  },
+  {
+    "id": "7",
+    "title": "Nissan",
+    "text": "Japan, founded in 1933, Yoshisuke Aikawa, Nissan Altima",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Nissan-logo.svg"
+  },
+  {
+    "id": "8",
+    "title": "Hyundai",
+    "text": "South Korea, founded in 1967, Chung Ju-yung, Hyundai Elantra",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Hyundai_Motor_Company_logo.svg"
+  },
+  {
+    "id": "9",
+    "title": "Chevrolet",
+    "text": "United States, founded in 1911, Louis Chevrolet and William C. Durant, Chevrolet Silverado",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Chevrolet_logo_2013.svg"
+  },
+  {
+    "id": "10",
+    "title": "Kia",
+    "text": "South Korea, founded in 1944, Kim Cheol-ho, Kia Sportage",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Kia_logo.svg"
+  },
+  {
+    "id": "11",
+    "title": "Audi",
+    "text": "Germany, founded in 1909, August Horch, Audi A4",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg"
+  },
+  {
+    "id": "12",
+    "title": "Porsche",
+    "text": "Germany, founded in 1931, Ferdinand Porsche, Porsche 911",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Porsche_logo.svg"
+  },
+  {
+    "id": "13",
+    "title": "Tesla",
+    "text": "United States, founded in 2003, Martin Eberhard and Marc Tarpenning, Tesla Model 3",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg"
+  },
+  {
+    "id": "14",
+    "title": "Lexus",
+    "text": "Japan, founded in 1989, Eiji Toyoda, Lexus RX",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Lexus_logo.svg"
+  },
+  {
+    "id": "15",
+    "title": "Mazda",
+    "text": "Japan, founded in 1920, Jujiro Matsuda, Mazda CX-5",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Mazda_logo_2018.svg"
+  },
+  {
+    "id": "16",
+    "title": "Subaru",
+    "text": "Japan, founded in 1953, Kenji Kita, Subaru Outback",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Subaru_logo.svg"
+  },
+  {
+    "id": "17",
+    "title": "Volvo",
+    "text": "Sweden, founded in 1927, Assar Gabrielsson and Gustaf Larson, Volvo XC90",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Volvo_logo.svg"
+  },
+  {
+    "id": "18",
+    "title": "Land Rover",
+    "text": "United Kingdom, founded in 1948, Rover Company, Land Rover Range Rover",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/en/9/9d/Land_Rover_logo.svg"
+  },
+  {
+    "id": "19",
+    "title": "Jaguar",
+    "text": "United Kingdom, founded in 1922, William Lyons and William Walmsley, Jaguar F-PACE",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Jaguar_2012_logo.svg"
+  },
+  {
+    "id": "20",
+    "title": "Mini",
+    "text": "United Kingdom, founded in 1959, Sir Alec Issigonis, Mini Cooper",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mini_logo.svg"
+  },
+  {
+    "id": "21",
+    "title": "Jeep",
+    "text": "United States, founded in 1941, Willys-Overland, Jeep Wrangler",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Jeep_logo.svg"
+  },
+  {
+    "id": "22",
+    "title": "Chrysler",
+    "text": "United States, founded in 1925, Walter Chrysler, Chrysler 300",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Chrysler_logo_2020.svg"
+  },
+  {
+    "id": "23",
+    "title": "Dodge",
+    "text": "United States, founded in 1900, Horace and John Dodge, Dodge Challenger",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Dodge_logo.svg"
+  },
+  {
+    "id": "24",
+    "title": "Fiat",
+    "text": "Italy, founded in 1899, Giovanni Agnelli, Fiat 500",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Fiat_Automobiles_logo.svg"
+  },
+  {
+    "id": "25",
+    "title": "Peugeot",
+    "text": "France, founded in 1810, Armand Peugeot, Peugeot 3008",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Peugeot_2021_logo.svg"
+  },
+  {
+    "id": "26",
+    "title": "Renault",
+    "text": "France, founded in 1899, Louis Renault, Renault Clio",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_2009_logo.svg"
+  },
+  {
+    "id": "27",
+    "title": "Citroën",
+    "text": "France, founded in 1919, André Citroën, Citroën C3",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Citro%C3%ABn.svg"
+  },
+  {
+    "id": "28",
+    "title": "Opel",
+    "text": "Germany, founded in 1862, Adam Opel, Opel Corsa",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Opel_logo_2017.svg"
+  },
+  {
+    "id": "29",
+    "title": "Škoda",
+    "text": "Czech Republic, founded in 1895, Václav Laurin and Václav Klement, Škoda Octavia",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Skoda_logo_2019.svg"
+  },
+  {
+    "id": "30",
+    "title": "Seat",
+    "text": "Spain, founded in 1950, Instituto Nacional de Industria, Seat León",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Seat_logo.svg"
+  },
+  {
+    "id": "31",
+    "title": "Alfa Romeo",
+    "text": "Italy, founded in 1910, Nicola Romeo, Alfa Romeo Giulia",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Alfa_Romeo_2015.svg"
+  },
+  {
+    "id": "32",
+    "title": "Suzuki",
+    "text": "Japan, founded in 1909, Michio Suzuki, Suzuki Swift",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Suzuki_logo_2.svg"
+  },
+  {
+    "id": "33",
+    "title": "Mitsubishi",
+    "text": "Japan, founded in 1870, Yataro Iwasaki, Mitsubishi Outlander",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Mitsubishi_logo.svg"
+  },
+  {
+    "id": "34",
+    "title": "Infiniti",
+    "text": "Japan, founded in 1989, Nissan Motor Co., Infiniti Q50",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Infiniti_logo.svg"
+  },
+  {
+    "id": "35",
+    "title": "Acura",
+    "text": "Japan, founded in 1986, Honda Motor Company, Acura MDX",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Acura_logo.svg"
+  },
+  {
+    "id": "36",
+    "title": "Cadillac",
+    "text": "United States, founded in 1902, Henry Leland, Cadillac Escalade",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Cadillac_logo_2022.svg"
+  },
+  {
+    "id": "37",
+    "title": "Buick",
+    "text": "United States, founded in 1899, David Dunbar Buick, Buick Enclave",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Buick_logo.svg"
+  },
+  {
+    "id": "38",
+    "title": "GMC",
+    "text": "United States, founded in 1911, General Motors, GMC Sierra",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/GMC_logo.svg"
+  },
+  {
+    "id": "39",
+    "title": "Lincoln",
+    "text": "United States, founded in 1917, Henry M. Leland, Lincoln Navigator",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Lincoln_logo.svg"
+  },
+  {
+    "id": "40",
+    "title": "Genesis",
+    "text": "South Korea, founded in 2015, Hyundai Motor Group, Genesis G80",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Genesis_logo.svg"
+  },
+  {
+    "id": "41",
+    "title": "Maserati",
+    "text": "Italy, founded in 1914, Alfieri Maserati, Maserati Ghibli",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Maserati_logo_2.svg"
+  },
+  {
+    "id": "42",
+    "title": "Ferrari",
+    "text": "Italy, founded in 1939, Enzo Ferrari, Ferrari 488",
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Ferrari_logo.svg"
+    }
+  ]
+}
