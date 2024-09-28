@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { Input } from "@/components/ui/input";
 import {
   Card,
@@ -10,55 +11,38 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/ui/layout";
+import { Deck } from "@/types/deck";
+const fetchDecks = async (searchQuery: string = "") => {
+  const response = await fetch(
+    `/api/deck/list${
+      searchQuery ? `?search=${encodeURIComponent(searchQuery)}` : ""
+    }`
+  );
+  if (!response.ok) {
+    throw new Error("Failed to fetch decks");
+  }
+  return response.json() as Promise<Deck[]>;
+};
 
-interface Deck {
-  id: string;
-  title: string;
-  description: string;
-  coverImage: string;
-  cardCount: number;
-}
-
-// In a real app, you would fetch decks from your API here
-// For this example, we'll use mock data
-const mockDecks: Deck[] = [
-  {
-    id: "top-car-brands",
-    title: "JavaScript Basics",
-    description: "Learn the fundamentals of JavaScript",
-    coverImage: "/placeholder.svg?height=100&width=200",
-    cardCount: 20,
-  },
-  {
-    id: "2",
-    title: "React Hooks",
-    description: "Master React Hooks",
-    coverImage: "/placeholder.svg?height=100&width=200",
-    cardCount: 15,
-  },
-  {
-    id: "3",
-    title: "CSS Flexbox",
-    description: "Understand CSS Flexbox layout",
-    coverImage: "/placeholder.svg?height=100&width=200",
-    cardCount: 10,
-  },
-];
 export default function LandingPage() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [decks, setDecks] = useState<Deck[]>(mockDecks);
 
-  const handleSearch = async (query: string) => {
+  const {
+    data: decks = [],
+    isLoading,
+    error,
+  } = useQuery({
+    queryKey: ["decks", searchQuery],
+    queryFn: () => fetchDecks(searchQuery),
+    staleTime: 60000, // 1 minute
+    refetchOnWindowFocus: false,
+  });
+
+  const handleSearch = (query: string) => {
     setSearchQuery(query);
-    setDecks(
-      mockDecks.filter((deck) =>
-        deck.title.toLowerCase().includes(query.toLowerCase())
-      )
-    );
   };
 
   return (
@@ -82,32 +66,39 @@ export default function LandingPage() {
           onChange={(e) => handleSearch(e.target.value)}
           className="mb-8"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {decks.map((deck) => (
-            <Link href={`/deck/${deck.id}`} key={deck.id}>
-              <Card className="cursor-pointer hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <Image
-                    src={deck.coverImage}
-                    alt={deck.title}
-                    width={200}
-                    height={100}
-                    className="w-full h-32 object-cover rounded-t-lg"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle>{deck.title}</CardTitle>
-                  <CardDescription>{deck.description}</CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <p className="text-sm text-muted-foreground">
-                    {deck.cardCount} cards
-                  </p>
-                </CardFooter>
-              </Card>
-            </Link>
-          ))}
-        </div>
+        {isLoading ? (
+          <p>Loading decks...</p>
+        ) : error ? (
+          <p>Error loading decks. Please try again later.</p>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {decks.map((deck) => (
+              <Link href={`/deck/${deck.id}`} key={deck.id}>
+                <Card className="cursor-pointer hover:shadow-lg transition-shadow">
+                  {deck.coverImage && (
+                    <CardHeader>
+                      <Image
+                        src={deck.coverImage}
+                        alt={deck.title}
+                        width={200}
+                        height={100}
+                        className="w-full h-32 object-cover rounded-t-lg"
+                      />
+                    </CardHeader>
+                  )}
+                  <CardContent>
+                    <CardTitle>{deck.title}</CardTitle>
+                  </CardContent>
+                  <CardFooter>
+                    <p className="text-sm text-muted-foreground">
+                      {deck.cards?.length} cards
+                    </p>
+                  </CardFooter>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </Layout>
   );
